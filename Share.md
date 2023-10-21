@@ -23,7 +23,7 @@ print(json_string)
 
 
 ### 425. Authentication Authorization Accounting(AAA)
-#### :: Privilege Levels
+#### Privilege Levels
 ```go
 | Level    | Description                                                                 |
 |:-------- | --------------------------------------------------------------------------- |
@@ -37,9 +37,9 @@ print(json_string)
 | -------  | --------------------------------------------------------------------------- |
 ```
 
-#### :writing_hand: Configure Password Strength and Management for <span style=color:red>Common Criteria</span>
+#### Configure Password Strength and Management for <span style=color:red>Common Criteria</span>
 
-```go
+```go!
       --------------------------------------------------------------------------- 
     | username admin privilege 15 password 0 Cisco13579!                          |
     | !                                                                           |
@@ -59,6 +59,8 @@ print(json_string)
 (So, numer "7" behind password is mean encry of Cisco(Vigenère cipher). "5" is MD5)
 
 - The "lifetimmonth" is mean the circle of password expire
+
+So, Need to add "username [admin] common-criteria-policy [Administrators] password [0][password]"
 ```
 
 ##### TACACS+ https://github.com/christian-becker/tac_plus
